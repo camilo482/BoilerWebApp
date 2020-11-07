@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Boiler Level Selector</title>
+    <link href="styleHNDA.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="logos">
+        <a title="Siemens Colombia" href="https://new.siemens.com/co/es.html">
+          <img class="logo-siemens" src="../imagenes/Siemenslogo.jpg" alt="logo de Siemens">
+        </a>
+        <a title="Process Automation" href="https://new.siemens.com/global/en/products/automation/topic-areas/process-automation.html">
+          <p class="text-logo">Siemens Process<br>Automation</p>
+        </a>
+      </div>
+      <div class="cointainer">
+        <nav class="nav">
+            <ul id="menu">
+                <li><a class="menu__link" href="../index.html">Inicio</li></a>
+                <li><a class="menu__link" href="#">Nivel de Agua</li></a>
+                <li><a class="menu__link" href="#">Control de combustión</li></a>
+                <li><a class="menu__link" href="#">Integración con DCS</li></a>
+                <li><a class="menu__link" href="#">Solución completa</li></a>
+                <li><a class="menu__link" href="#">Contactenos</li></a>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="contenido-pag">
+      <div class="titulo-main">
+        <h1 class="titulo-sol">Boiler Level Selector</h1>
+      </div>
+      <section class="cont-columnas-2">
+        <div class="caja-inf">
+          <h2 class="titulo-sec">1. Selecciona el tipo de elementos</h2>
+          <br />
+          <form>
+            <p class="parrafo-2">
+              <label for="e-sensor">Sensor: </label>
+              <select id="sele-sensor" name="e-sensor">
+                <option value="presion">Sensor de Presión</option>
+                <option value="radar">Medidor tipo radar</option>
+              </select>
+            </p>
+            <p class="parrafo-2">
+              <label for="e-control">Control: </label>
+              <select id="sele-control" name="e-control">
+                <option value="logo">Logo 8</option>
+                <option value="plc">PLC</option>
+              </select>
+            </p>
+            <p class="parrafo-2">
+              <label for="e-actuador">Actuador: </label>
+              <select id="sele-actuador" name="e-actuador">
+                <option value="vfd">Variador de frecuencia</option>
+                <option value="valvula">Valvula de Bola Bray</option>
+              </select>
+            </p>
+          </form>
+          <br />
+          <button id="boton-emp">Empezar</button>
+        </div>
+      </section>
+      <hr />
+      <section class="cont-columnas-2">
+        <div class="caja-inf">
+          <h2 class="titulo-sec">2. Selecciona las caracteristicas</h2>
+          <br />
+          <form>
+            <p class="parrafo-2">
+              <label id="titulo-sensor" for="e1-sensor">Instrumento: </label>
+              <select id="sele1-sensor" name="e1-sensor">
+                <option id="sensor1" value="S1">Instrumento 1</option>
+                <option id="sensor2" value="S2">Instrumento 2</option>
+              </select>
+            </p>
+            <p class="parrafo-2">
+              <label id="titulo-control" for="e1-control">Controlador: </label>
+              <select id="sele1-control" name="e1-control">
+                <option id="control1" value="C1">Equipo de control 1</option>
+                <option id="control2" value="C2">Equipo de control 2</option>
+              </select>
+            </p>
+            <p class="parrafo-2">
+              <label id="titulo-actuador" for="e1-actuador">Actuador: </label>
+              <select id="sele1-actuador" name="e1-actuador">
+                <option id="actuador1" value="A1">Actuador 1</option>
+                <option id="actuador2" value="A2">Actuador 2</option>
+                <option id="actuador3" value="A3">Actuador 3</option>
+                <option id="actuador4" value="A4">Actuador 4</option>
+              </select>
+            </p>
+          </form>
+          <br />
+          <button id="boton-sel">Seleccionar</button>
+        </div>
+      </section>
+      <hr />
+      <section class="cont-columnas-2">
+        <div class="caja-ele">
+          <h2 class="titulo-sec">3. Copia las referencias seleccionadas</h2>
+          <br /><br />
+          <div id="salida">
+            <div class="caja-sen">
+              <p class="parrafo-3" id="salida-sensor">
+                Elemento sensor
+              </p>
+              <img
+                id="sensor_img"
+                src="17-siemens/VACIO.jpg"
+                alt="Sensor P320"
+                width="auto"
+                height="300px"
+              />
+              <br /><br /><br />
+              <a class="AE-1"
+                id="sensor_pdf"
+                href="17-siemens/BLANCO"
+                target="_blank"
+                download="Datos Sensor"
+              ></a>
+              <br /><br /><br />
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="caja-con">
+              <p class="parrafo-3" id="salida-control">
+                Elemento control
+              </p>
+              <img
+                id="control_img"
+                src="17-siemens/VACIO.jpg"
+                alt="Sensor P320"
+                width="auto"
+                height="300px"
+              />
+              <br /><br /><br />
+              <a class="AE-1"
+                id="control_pdf"
+                href="17-siemens/BLANCO"
+                target="_blank"
+                download="Datos Control"
+              ></a>
+              <br /><br /><br />
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="caja-act">
+              <p class="parrafo-3" id="salida-actuador">
+                Elemento actuador
+              </p>
+              <img
+                id="actuador_img"
+                src="17-siemens/VACIO.jpg"
+                alt="Sensor P320"
+                width="auto"
+                height="300px"
+              />
+              <br /><br /><br />
+              <a class="AE-1"
+                id="actuador_pdf"
+                href="17-siemens/BLANCO"
+                target="_blank"
+                download="Datos Actuador"
+              ></a>
+              <br /><br /><br />
+              <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </section>
+
+    </section>
+    <script src="17-siemens/siemens.js"></script>
+  </body>
+</html>

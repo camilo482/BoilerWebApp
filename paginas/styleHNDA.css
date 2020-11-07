@@ -1,0 +1,726 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box; /* Soluciona el problema de width */
+}
+/* El codigo anterior elimina los parametros de su forma estandar */
+
+/* Inicia aqui */
+
+/* Cabecera fija */
+.cabecera {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+/* Menu listado de botones */
+.cointainer {
+  clear: both;
+  float: left;
+  overflow: hidden;
+  background: rgba(155, 175, 190, 0.7);
+  width: 100%;
+}
+#menu {
+  float: left;
+  left: 50%;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+#menu li {
+  padding: 20px;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+#menu li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+#menu li:hover {
+  background: rgba(165, 225, 225, 0.9);
+}
+
+/* Contenedor de logos */
+.logos {
+  clear: both;
+  overflow: hidden;
+  background: rgba(155, 175, 190, 0.7);
+  width: 100%;
+}
+/* Logo de Siemens */
+img.logo-siemens {
+  margin-top: 20px;
+  margin-left: 35px;
+  width: 200px;
+  height: 85px;
+}
+/* Logo Process Automation */
+.text-logo {
+  overflow: hidden;
+  font-size: 26px;
+  padding: 16px;
+  background-color: rgba(65, 170, 170, 0.99);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  display: inline;
+  margin-top: 20px;
+  right: 35px;
+}
+
+/* contenido de la pagina */
+#contenido-pag {
+  width: 1200px;
+  margin: 0px auto;
+}
+
+/* Titulo de pagina */
+.titulo-sol {
+  padding-top: 180px;
+  text-align: center;
+  font: arial;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgba(60, 70, 75, 1);
+}
+/* Contenedor de columnas */
+.cont-columnas {
+  width: 100%;
+  margin: auto;
+}
+.caja {
+  width: 50%;
+  height: 566px;
+  float: left;
+  padding: 20px 20px;
+}
+.caja img {
+  width: 100%;
+  border-radius: 20px;
+}
+.titulo-sec {
+  text-align: center;
+  font: arial;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgba(60, 70, 75, 1);
+}
+.parrafo-1 {
+  text-align: justify;
+  font: arial;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(60, 70, 75, 1);
+}
+.cont-columnas-2 {
+  width: 100%;
+  margin: auto;
+}
+.caja-inf {
+  width: 100%;
+  padding: 20px 20px;
+  margin: auto;
+}
+.parrafo-2 {
+  text-align: left;
+  font: arial;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(60, 70, 75, 1);
+  padding: 10px;
+}
+#boton-emp {
+  margin-left: 10px;
+  padding: 5px;
+}
+#boton-sel {
+  margin-left: 10px;
+  padding: 5px;
+}
+.caja-ele {
+  padding-top: 20px;
+  width: 100%;
+  margin: auto;
+}
+.caja-sen {
+  width: 400px;
+  float: left;
+  text-align: center;
+}
+.caja-con {
+  width: 400px;
+  float: left;
+  text-align: center;
+}
+.caja-act {
+  float: left;
+  width: 400px;
+  text-align: center;
+}
+.parrafo-3 {
+  text-align: center;
+  font: arial;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(60, 70, 75, 1);
+  padding: 10px;
+}
+/* Titulo de la unidad */
+/* Contenedor de columnas */
+.titulo-sepa {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  clear: both;
+  padding-top: 20px;
+}
+.titulo-BU-PA {
+  text-align: center;
+  font: arial;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgba(60, 70, 75, 1);
+}
+
+/* Contenido Instrumentación */
+.banner-PI {
+  width: 100%;
+  overflow: hidden;
+  background: #1abc9c;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: 0.6s;
+}
+.banner-PI:hover {
+  background: #444;
+  transition: 0.6s;
+}
+.con-banner-PI {
+  width: 90%;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+.caja-PI {
+  width: 50%;
+  float: left;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+.instruimg {
+  width: 560px;
+  height: auto;
+}
+.titulo-PI {
+  text-align: center;
+  font: arial;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.parrafo-PI {
+  text-align: justify;
+  font: arial;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+/* Enlaces Instrumentacion */
+.PI-1 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.PI-1:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.PI-2 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.PI-2:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.PI-3 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.PI-3:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.PI-4 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.PI-4:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+
+/* Contenido Automation and Engeniering */
+.banner-AE {
+  width: 100%;
+  overflow: hidden;
+  background: #1abc9c;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: 0.6s;
+}
+.banner-AE:hover {
+  background: #444;
+  transition: 0.6s;
+}
+.con-banner-AE {
+  width: 90%;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+.caja-AE {
+  width: 50%;
+  float: left;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+#automa {
+  width: 560px;
+  height: 315px;
+}
+.titulo-AE {
+  text-align: center;
+  font: arial;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.parrafo-AE {
+  text-align: justify;
+  font: arial;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+/* Enlaces Automatizacion */
+.AE-1 {
+  display: none;
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: center;
+}
+.AE-1:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.AE-2 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.AE-2:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.AE-3 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.AE-3:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.AE-4 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.AE-4:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+
+/* Contenido Instrumentación */
+/* Contenido Instrumentación */
+.banner-CI {
+  width: 100%;
+  overflow: hidden;
+  background: #1abc9c;
+  clear: both;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: 0.6s;
+}
+.banner-CI:hover {
+  background: #444;
+  transition: 0.6s;
+}
+.con-banner-CI {
+  width: 90%;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+.caja-CI {
+  width: 50%;
+  float: left;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  margin: auto;
+}
+.instruimg {
+  width: 560px;
+  height: auto;
+}
+.titulo-CI {
+  text-align: center;
+  font: arial;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.parrafo-CI {
+  text-align: justify;
+  font: arial;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+/* Enlaces Instrumentacion */
+.CI-1 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.CI-1:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.CI-2 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.CI-2:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.CI-3 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.CI-3:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+.CI-4 {
+  width: 60%;
+  padding: 8px;
+  background: rgba(255, 166, 34, 0.9);
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.CI-4:hover {
+  background: rgba(238, 143, 0, 0.9);
+}
+
+/* Contenido Instrumentación */
+
+/* media query screen */
+@media screen and (max-width: 950px) {
+  .titulo-sol {
+    padding-top: 200px;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    font: arial;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(60, 70, 75, 1);
+  }
+  .cont-columnas {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .caja {
+    width: 100%;
+    float: none;
+  }
+  .caldera {
+    width: 100%;
+    height: auto;
+  }
+  .titulo-sec {
+    text-align: center;
+    font: arial;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(60, 70, 75, 1);
+  }
+  .parrafo-1 {
+    text-align: justify;
+    font: arial;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(60, 70, 75, 1);
+  }
+  .titulo-BU-PA {
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .con-banner-PI {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .caja-PI {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+  #instru {
+    width: 350px;
+    height: 196px;
+  }
+  .titulo-PI {
+    font-size: 20px;
+  }
+  .parrafo-PI {
+    font-size: 14px;
+  }
+  .PI-1,
+  .PI-2,
+  .PI-3,
+  .PI-4 {
+    width: 100%;
+    font-size: 14px;
+  }
+  .con-banner-AE {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .caja-AE {
+    text-align: center;
+    width: 100%;
+    float: none;
+  }
+  #automa {
+    width: 350px;
+    height: 196px;
+  }
+  .titulo-AE {
+    font-size: 20px;
+  }
+  .parrafo-AE {
+    font-size: 14px;
+  }
+  .AE-1,
+  .AE-2,
+  .AE-3,
+  .AE-4 {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
